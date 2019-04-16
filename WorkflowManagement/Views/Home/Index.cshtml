@@ -3,178 +3,223 @@
     ViewBag.Description = "Home Page";
 }
 
-<div class="row">
-    <div class="col-xs-12 col-md-5">
-        <div class="box box-default">
-            <div class="box-header">
-                <h3 class="box-title">iCheck - Checkbox &amp; Radio Inputs</h3>
-            </div>
-            <div class="box-body">
-                <div class="form-group">
-                    <div>
-                        <input type="checkbox" class="form-control" checked="checked"> Checkbox
-                    </div>
-                    <div>
-                        <input type="checkbox" class="form-control"> Checkbox
-                    </div>
-                    <div>
-                        <input type="checkbox" class="form-control" disabled="disabled"> Disabled Checkbox
-                    </div>
+<!-- Main content -->
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>3</h3>
+                    <p>Total Notes</p>
                 </div>
-                <div class="form-group">
-                    <div>
-                        <input type="radio" class="form-control" checked="checked"> Radio Button
-                    </div>
-                    <div>
-                        <input type="radio" class="form-control"> Radio Button
-                    </div>
-                    <div>
-                        <input type="radio" class="form-control" disabled="disabled"> Disabled Radio Button
-                    </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
                 </div>
             </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>1<sup style="font-size: 20px"></sup></h3>
+                    <p>Resolved Cases</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>2</h3>
+                    <p>New Cases</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-person-add"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>1</h3>
+                    <p>In Progress</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+    </div><!-- /.row -->
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h5 class="box-title">HISTORY NOTES </h5>
+                    <div class="box-tools">
+                        <div class="input-group" style="width: 150px;">
+                            <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                        <tr>
+                            <th>ID</th>
+                            <th>Subject</th>
+                            <th>Created By</th>
+                            <th>Date Created</th>
+                            <th>Comments</th>
+                            <th>View</th>
+                            <th>Add</th>
+                        </tr>
+                        <tr>
+                            <td>183</td>
+                            <td>Loan Balance</td>
+                            <td>Lindiwe Ndlovu</td>
+                            <td>11-5-2019</td>
+                            <td>Danger alert preview. This alert is dismissable.  enjoy with my whole heart.</td>
+                            <td><span class="label label-danger">View </span></td>
+                            <td><span class="label label-warning">Add Note</span></td>
+
+                        </tr>
+                        <tr>
+                            <td>219</td>
+                            <td>Fund Credit Request</td>
+                            <td>Kungomusa Ndlovu</td>
+                            <td>11-3-2019</td>
+                            <td>Danger alert preview. This alert is dismissable. ng which I enjoy with my whole heart.</td>
+                            <td><span class="label label-danger">View </span></td>
+                            <td><span class="label label-warning">Add Note</span></td>
+                        </tr>
+                        <tr>
+                            <td>657</td>
+                            <td>Details Update</td>
+                            <td>Mangaliso Ndlovu</td>
+                            <td>11-3-2019</td>
+                            <td>A wonderful serenity has taken possession of my entire soul,</td>
+                            <td><span class="label label-danger">View</span></td>
+                            <td><span class="label label-warning">Add Note</span></td>
+                        </tr>
+                    </table>
+                    <div class="box-footer clearfix">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
         </div>
     </div>
-    <div class="col-xs-12 col-md-7">
-        <div class="box box-default">
-            <div class="box-header with-border">
-                <h3 class="box-title">Bootstrap-Select</h3>
 
-                <div class="box-tools pull-right">
-                    <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                    <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-remove"></i></button>
-                </div>
-            </div>
-            <div class="box-body">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Minimal</label>
-                            <select class="selectpicker">
-                                <optgroup label="Picnic">
-                                    <option>Mustard</option>
-                                    <option>Ketchup</option>
-                                    <option>Relish</option>
-                                </optgroup>
-                                <optgroup label="Camping">
-                                    <option>Tent</option>
-                                    <option>Flashlight</option>
-                                    <option>Toilet Paper</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Disabled</label>
-                            <select class="selectpicker" disabled>
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <h5 class="box-title">CASE MANAGEMENT</h5>
+                    <div class="box-tools">
+                        <div class="input-group" style="width: 150px;">
+                            <input type="text" name="table_search" class="form-control input-sm pull-right" placeholder="Search">
+                            <div class="input-group-btn">
+                                <button class="btn btn-sm btn-default"><i class="fa fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label>Multiple</label>
-                            <select class="selectpicker" multiple>
-                                <option>Mustard</option>
-                                <option>Ketchup</option>
-                                <option>Relish</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label>Subtext</label>
-                            <select class="selectpicker" data-show-subtext="true">
-                                <option data-subtext="French's">Mustard</option>
-                                <option data-subtext="Heinz">Ketchup</option>
-                                <option data-subtext="Sweet">Relish</option>
-                                <option data-subtext="Miracle Whip">Mayonnaise</option>
-                                <option data-divider="true"></option>
-                                <option data-subtext="Honey">Barbecue Sauce</option>
-                                <option data-subtext="Ranch">Salad Dressing</option>
-                                <option data-subtext="Sweet &amp; Spicy">Tabasco</option>
-                                <option data-subtext="Chunky">Salsa</option>
-                            </select>
-                        </div>
+                </div><!-- /.box-header -->
+                <div class="box-body table-responsive no-padding">
+                    <table class="table table-hover">
+                        <tr>
+                            <th>ID</th>
+                            <th>Subject</th>
+                            <th>Created by</th>
+                            <th>Date Created</th>
+                            <th>Due Date</th>
+                            <th>Assigned To</th>
+                            <th>Priority</th>
+                            <th>Status</th>
+                            <th>SLA</th>
+                            <th>View</th>
+                            <th>Add</th>
+                        </tr>
+                        <tr>
+                            <td>183</td>
+                            <td>Billing Dispute</td>
+                            <td>Mashudu Muleya</td>
+                            <td>11-7-2014</td>
+                            <td>11-7-2014</td>
+                            <td>Fortune Ndlovu</td>
+                            <td>High </td>
+                            <td>New </td>
+                            <th>Yes</th>
+                            <td><span class="label label-danger">View</span></td>
+                            <td><span class="label label-warning">Create</span></td>
+                        </tr>
+                        <tr>
+                            <td>219</td>
+                            <td>Loan Application</td>
+                            <td>Fortune Ndlovu</td>
+                            <td>01-4-2019</td>
+                            <td>14-4-2019</td>
+                            <td>Kungomusa Ndlovu</td>
+                            <td>Low</td>
+                            <td>In Progress</td>
+                            <th>No</th>
+                            <td><span class="label label-danger">View </span></td>
+                            <td><span class="label label-warning">Create</span></td>
+                        </tr>
+                        <tr>
+                            <td>657</td>
+                            <td>Data Updates</td>
+                            <td>Phiwokuhle Ndlovu</td>
+                            <td>10-4-2019</td>
+                            <td>25-4-2019</td>
+                            <td>Phiwo Ndlovu</td>
+                            <td>Medium </td>
+                            <td>Resolved</td>
+                            <th>Yes</th>
+                            <td><span class="label label-danger">View</span></td>
+                            <td><span class="label label-warning">Create</span></td>
+                        </tr>
+                        <tr>
+                            <td>175</td>
+                            <td>Banking Details</td>
+                            <td>Snenhlanhla Maphumulo</td>
+                            <td>16-4-2019</td>
+                            <td>23-4-2019</td>
+                            <td>Fortune Ndlovu</td>
+                            <td>High </td>
+                            <td>New </td>
+                            <th>No</th>
+                            <td><span class="label label-danger">View</span></td>
+                            <td><span class="label label-warning">Create</span></td>
+                        </tr>
+                    </table>
+                    <div class="box-footer clearfix">
+                        <ul class="pagination pagination-sm no-margin pull-right">
+                            <li><a href="#">&laquo;</a></li>
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">&raquo;</a></li>
+                        </ul>
                     </div>
-                </div>
-            </div>
+                </div><!-- /.box-body -->
+            </div><!-- /.box -->
         </div>
     </div>
-</div>
-<div class="row">
-    <div class="col-xs-12 col-md-6">
-        <div class="box box-default">
-            <div class="box-header">
-                Date Picker
-            </div>
-            <div class="box-body">
-                <div class="form-group">
-                    <label>Date:</label>
-                    <div class="input-group date">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" class="form-control pull-right datepicker">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-xs-12 col-md-6">
-        <div class="box box-danger">
-            <div class="box-header">
-                <h3 class="box-title">Input masks</h3>
-            </div>
-            <div class="box-body">
-                <div class="form-group">
-                    <label>Date masks:</label>
 
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" class="form-control" data-inputmask="'alias': 'dd/mm/yyyy'" data-mask="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-calendar"></i>
-                        </div>
-                        <input type="text" class="form-control" data-inputmask="'alias': 'mm/dd/yyyy'" data-mask="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>US phone mask:</label>
 
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <input type="text" class="form-control" data-inputmask="&quot;mask&quot;: &quot;(999) 999-9999&quot;" data-mask="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Intl US phone mask:</label>
-
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <input type="text" class="form-control" data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask="">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>IP mask:</label>
-
-                    <div class="input-group">
-                        <div class="input-group-addon">
-                            <i class="fa fa-laptop"></i>
-                        </div>
-                        <input type="text" class="form-control" data-inputmask="'alias': 'ip'" data-mask="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</section><!-- /.content -->
+     
