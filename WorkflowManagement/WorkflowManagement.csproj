@@ -118,6 +118,8 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
+    <Content Include="Views\CreateCase\CreateCase.cshtml" />
+    <Content Include="Views\CreateNote\CreateNote.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -126,6 +128,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\CreateCaseController.cs" />
+    <Compile Include="Controllers\CreateNoteController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

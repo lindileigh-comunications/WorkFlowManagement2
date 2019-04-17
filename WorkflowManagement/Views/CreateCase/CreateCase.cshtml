@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "WELCOME TO CASE MANAGEMENT";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!-- Main content -->
+<section class="content">
+    <!-- Small boxes (Stat box) -->
+    <div class="row">
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>3</h3>
+                    <p>Total Notes</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-bag"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>1<sup style="font-size: 20px"></sup></h3>
+                    <p>Resolved Cases</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-stats-bars"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>2</h3>
+                    <p>New Cases</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-person-add"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+        <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+                <div class="inner">
+                    <h3>1</h3>
+                    <p>In Progress</p>
+                </div>
+                <div class="icon">
+                    <i class="ion ion-pie-graph"></i>
+                </div>
+            </div>
+        </div><!-- ./col -->
+    </div><!-- /.row -->
+    @* create case form  *@
+
+    <div class="box box-warning">
+        <div class="box-header with-border">
+            <h3 class="box-title">Please complete the form below</h3>
+        </div><!-- /.box-header -->
+
+        <label>-</label>
+        <div class="form-group">
+            <label>Subject:</label>
+            <select class="form-control">
+                <option>Billing Dispute</option>
+                <option>Loan Application</option>
+                <option>Contributions Not Received</option>
+                <option>Documents Not Received</option>
+                <option>Benefit Statement Request</option>
+                <option>Fund Credit Dispute</option>
+            </select>
+        </div>
+
+        <label>Priority:</label>
+
+        <div class="form-group">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">
+                    High
+                </label>
+            </div>
+
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox">
+                    Low
+                </label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Status:</label>
+            <select class="form-control">
+                <option>New</option>
+                <option>Assigned</option>
+                <option>In Progress</option>
+                <option>Closed</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Assigned to:</label>
+            <select class="form-control">
+                <option>Fortune Ndlovu</option>
+                <option>Phiwokuhle Ndlovu</option>
+                <option>Mashudu Muleya</option>
+                <option>Kungomusa Ndlovu</option>
+            </select>
+        </div>
+
+        <div class="box">
+            <div class="box-header">
+                <h3 class="box-title">Notes Editor <small>Simple and fast</small></h3>
+                <!-- tools box -->
+                <div class="pull-right box-tools">
+                    <button class="btn btn-default btn-sm" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
+                    <button class="btn btn-default btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                </div><!-- /. tools -->
+            </div><!-- /.box-header -->
+            <div class="box-body pad">
+                <form>
+                    <textarea class="textarea" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                </form>
+            </div>
+
+        </div><!-- /.box-body -->
+    </div><!-- /.box -->
+
+    <tr>
+        <td><button class="btn btn-block btn-danger btn-lg">Submit Case</button></td>
+
+    </tr>
+

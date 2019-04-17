@@ -25,7 +25,9 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="#">View Notes</a></li>
-                    <li><a href="#">Add Note</a></li>
+                    <li class="@Url.IsLinkActive("Index", "CreateNote")">
+                        <a href="@Url.Action("Index","CreateNote")"><i class="fa fa-link"></i> <span>Add Note </span></a>
+                    </li>
                     <li><a href="#">Search</a></li>
                 </ul>
             </li>
@@ -39,7 +41,10 @@
                 </a>
                 <ul class="treeview-menu">
                     <li><a href="#">View Cases</a></li>
-                    <li><a href="#">Create Case</a></li>
+                    <li class="@Url.IsLinkActive("Index", "CreateCase")">
+                        <a href="@Url.Action("Index","CreateCase")"><i class="fa fa-link"></i> <span>Create Case</span></a>
+                    </li>
+                    
                     <li><a href="#">Search</a></li>
                 </ul>
             </li>
